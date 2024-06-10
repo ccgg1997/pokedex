@@ -6,6 +6,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { PokemonModule } from './pokemon/pokemon.module';
 import { CommonModule } from './common/common.module';
 import { Common2Module } from './common2/common2.module';
+import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [
@@ -21,6 +22,8 @@ import { Common2Module } from './common2/common2.module';
     CommonModule,
 
     Common2Module,
+
+    SeedModule,
 
   ],
 })
